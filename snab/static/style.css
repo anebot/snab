@@ -1,0 +1,65 @@
+.centeredDiv {
+  width:60%;
+  margin:0 auto;
+ }
+
+.maindiv { word-wrap: break-word; font-size: 18px; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif; color: #333333; font-weight: 400; padding-bottom: 260px; }
+.maindiv h1, .maindiv h2, .maindiv h3, .maindiv h4 { color: #333333; font-weight: 300; padding: 0; margin-top: 1em; }
+.maindiv a { color: #448ac9; text-decoration: none; }
+.maindiv a:hover { text-decoration: underline; border: 0; }
+.maindiv h1 { line-height: 1.1em; margin-bottom: 1em; text-align: center; font-size: 3em; }
+.maindiv h2 { line-height: 1.1em; margin-bottom: .5em; font-size: 2em; }
+.maindiv h3 { line-height: 1.1em; margin-bottom: .6em; font-size: 1.4em; }
+.maindiv h4 { line-height: 1.1em; margin-bottom: .71em; font-size: 1.2em; }
+.maindiv hgroup :first-child { margin: 0 0 0 0; }
+.maindiv hgroup :last-child { margin-top: 0; font-style: italic; font-weight: bold; }
+.maindiv p, .maindiv dd, .maindiv dt, .maindiv pre, .maindiv ul, .maindiv ol, .maindiv table.text, .maindiv div.warn { margin-bottom: 17.6px; line-height: 1.45em; }
+.maindiv ul, .maindiv ol { padding-left: 24.8864px; }
+.maindiv ul ul, .maindiv ul ol, .maindiv ol ul, .maindiv ol ol { margin-bottom: 0; }
+.maindiv ul { list-style-type: square; }
+.maindiv ol { list-style-type: decimal; }
+.maindiv dt { font-weight: bold; }
+.maindiv dd { padding-left: 24.8864px; }
+.maindiv blockquote { border-left: 3px solid #d0d0d0; margin-left: 11.4432px; padding: 0 12.4432px 0 10.4432px; color: #4c4c4c; }
+.maindiv hr { display: block; border-width: 0; height: 1px; background: #f0f0f0; margin-bottom: 14.6px; }
+.maindiv pre { white-space: pre-wrap; }
+/*
+..maindiv {
+  padding:40px 50px 200px 50px;  
+  background-color:white;
+}
+body {
+  background-color: #EEEEEE;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen-Sans", "Ubuntu", "Cantarell", "Helvetica Neue", sans-serif; 
+  color: #333333; 
+  text-rendering: optimizeLegibility;
+  font-size:18px;
+  margin:0px 0px 0px 0px;
+}
+h1 {
+  font-size:4em;
+  line-height:0px;
+}
+h1 a {
+  text-decoration: none;
+}
+article h1,h2 {
+  font-weight: 300; 
+  font-size: 3em;
+  text-shadow: 0 1px 0 #fff; 
+  color: #333333;
+  padding: 50px 0px 0px 0px;
+  line-height: 0px;
+}
+article p {
+  text-align:justify;
+  line-height: 150%;
+}
+a {
+  color:#333333;
+}
+footer {
+  padding:5px 50px 80px 50px;  
+  background-color: #333333;
+  color:white;
+}*/

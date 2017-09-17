@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block body %}
+
+{% for entry in entries %}
+<article>
+    <h2>{{entry.PostTitle}}</h2>
+    {{ entry.PostContent | safe }}
+    <a href='{{entry.PostKey}}'>Read more...</a>
+</article>
+{% else %}
+<li><em>Unbelievable.  No entries here so far</em></li>
+{% endfor %}
+{% endblock %}

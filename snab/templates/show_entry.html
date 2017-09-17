@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block body %}
+{% if entry %}
+<article>
+    <h2>{{entry.PostTitle}}</h2>
+    {{ entry.PostContent | safe }}
+</article>
+{% endif %}
+{% endblock %}
