@@ -6,19 +6,26 @@ Tag your notes simply with one of the values defined at SN_PUBLISH_TAGS and they
 
 ### Prerequisites
 
-You need to install some package dependencies before install snab
+First create a virtualenv with python2.7
 
 ```
-pip install flask
-pip install simplenote
-pip install HTMLParser
+virtualenv env --python=python2.7
 ```
 
-### Installing && configuring
+Before launching the project you have to always activate the environment
 
 ```
-pip install --editable . 
+source env/bin/activate
 ```
+
+Finally, just install the dependencies
+
+```
+pip install -r requirements.txt
+```
+
+### Configuring
+
 
 Configure SNAB by editing the file ```settings.cfg``` file and export ```SNAB_SETTINGS``` enviroment variable pointing to it.
 You can see an example of config file at ```settings.example.cfg```
