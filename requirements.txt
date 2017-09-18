@@ -1,0 +1,10 @@
+click==6.7
+Flask==0.13.dev0
+flaskr==0.0.0
+HTMLParser==0.0.2
+itsdangerous==0.24
+Jinja2==2.9.6
+Markdown==2.6.9
+MarkupSafe==1.0
+simplenote==1.0.3
+Werkzeug==0.12.2
