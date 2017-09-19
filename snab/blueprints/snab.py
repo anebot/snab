@@ -3,7 +3,7 @@
     SNAB
     ~~~~~~
 
-    SimpleNote as Blog is an application for publishing 
+    SimpleNote as Blog is an application for publishing
     your SimpleNote notes as blog posts.
 
     :copyright: (c) 2017 by Artur Nebot.
@@ -14,21 +14,30 @@ from MLStripper import MLStripper
 from simplenote import Simplenote
 
 from flask import Blueprint, request, session, g, redirect, url_for, abort, \
-     render_template, flash, current_app
+    render_template, flash, current_app
 
 class SimplePost:
-    PostKey=''
-    PostTitle=''
-    PostContent=''
-    def __init__(self,PostTitle='',PostContent=''):
-        self.PostTitle=PostTitle
-        self.PostContent=PostContent
+    PostKey = ''
+    PostTitle = ''
+    PostContent = ''
+    def __init__(self, PostTitle='', PostContent=''):
+        self.PostTitle = PostTitle
+        self.PostContent = PostContent
 
 # create our blueprint :)
 bp = Blueprint('snab', __name__)
 
+# Avoid creating an authorization for each request, store
+# last simpleNote object
+simpleNote = None
+
+
 def getSimpleNote():
-    return Simplenote(current_app.config['SN_USER'],current_app.config['SN_PASSWORD'])
+    global simpleNote
+
+    if not simpleNote:
+        simpleNote = Simplenote(current_app.config['SN_USER'], current_app.config['SN_PASSWORD'])
+    return simpleNote
 
 @bp.route('/')
 def show_entries():
