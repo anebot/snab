@@ -21,6 +21,7 @@ source env/bin/activate
 Finally, just install the dependencies
 
 ```
+pip install -U https://github.com/pallets/flask/archive/master.tar.gz
 pip install -r requirements.txt
 ```
 
