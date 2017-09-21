@@ -3,12 +3,12 @@
     SNAB
     ~~~~~~
 
-    SimpleNote as Blog is an application for publishing 
+    SimpleNote as Blog is an application for publishing
     your SimpleNote notes as blog posts.
 
     Tag your notes simply with one of the values defined at SN_PUBLISH_TAGS
     and they will be published.
-    
+
     :copyright: (c) 2017 by Artur Nebot.
     :license: BSD, see LICENSE for more details.
 """
@@ -16,6 +16,7 @@
 import os
 from flask import Flask, g
 from werkzeug.utils import find_modules, import_string
+
 
 def create_app(config=None):
     app = Flask('snab')
