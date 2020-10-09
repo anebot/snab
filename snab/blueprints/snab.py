@@ -80,8 +80,7 @@ def show_entry(entry_key):
     (note_content, result) = s.get_note(entry_key)
     if result == 0:
         sp = SimplePost()
-        sp.PostContent = markdown.markdown(
-            unicode(note_content['content'], "utf-8"))
+        sp.PostContent = markdown.markdown(str(note_content['content']))
         return render_template('show_entry.html',
                                blogTitle=current_app.config['MAIN_TITLE'],
                                entry=sp)
