@@ -6,10 +6,10 @@ Tag your notes simply with one of the values defined at SN_PUBLISH_TAGS and they
 
 ### Prerequisites
 
-First create a virtualenv with python2.7
+First create a virtualenv with python3
 
 ```
-virtualenv env --python=python2.7
+virtualenv env --python=python3
 ```
 
 Before launching the project you have to always activate the environment

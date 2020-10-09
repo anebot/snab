@@ -10,7 +10,7 @@
     :license: BSD, see LICENSE for more details.
 """
 import markdown
-from MLStripper import MLStripper
+from .MLStripper import MLStripper
 from simplenote import Simplenote
 
 from flask import Blueprint, request, session, g, redirect, url_for, abort, \
@@ -50,11 +50,11 @@ def show_entries():
     notes_key, result = s.get_note_list(tags=tags)
     if result == 0:  # Success
         all_notes_content = []
-        print "Found [" + str(len(notes_key)) + "] notes to publish..."
+        print("Found [" + str(len(notes_key)) + "] notes to publish...")
         for note in notes_key:
             note_content, result = s.get_note(note['key'])
             if result == 0:
-                data = unicode(note_content['content'], "utf-8")
+                data = str(note_content['content'])
                 html_post_content = markdown.markdown(data)
                 post_lines = html_post_content.splitlines()
 
